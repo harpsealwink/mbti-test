@@ -1,0 +1,14 @@
+.App {
+  padding: 6vh 16vw 10vh 16vw;
+}
+
+.choices {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.begin-btn {
+  margin-left: 10px;
+}
