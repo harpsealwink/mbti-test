@@ -2,13 +2,29 @@
   padding: 6vh 16vw 10vh 16vw;
 }
 
+p {
+  font-weight: 500;
+}
+
+button {
+  font-size: 15px;
+  padding: 3px 10px 3px 10px;
+}
+
+input[type='radio'] {
+  accent-color: #4b63c4;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
 .choices {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-}
-
-.begin-btn {
-  margin-left: 10px;
+  color: #374fad;
+  font-weight: 500;
+  margin-bottom: 40px;
 }

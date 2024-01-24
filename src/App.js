@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [start, setStart] = useState(false);
   const [offset, setOffset] = useState(0);
-  const [text, setText] = useState();
+  const [text, setText] = useState("Begin");
   const [mbti, setMBTI] = useState();
 
   const [q1, setQ1] = useState();
@@ -65,6 +65,11 @@ function App() {
   }, [start]);
 
   const next = function () {
+    window.scrollTo({
+      top: 72,
+      left: 0,
+      behavior: "smooth"
+    });
     setQ1val(0);
     setQ2val(0);
     setQ3val(0);
@@ -295,13 +300,13 @@ function App() {
     // reached end of all questions
     setStart(false);
     setOffset(0);
-    setText("Retake the quiz:")
+    setText("Retake")
   }
 
   if (start) {
     return (
       <div className="App">
-        <h1> Work Style Survey </h1>
+        <h1 className="heading"> Work Style Survey </h1>
 
         <p>{q1}</p>
         <div className="choices">
@@ -412,14 +417,11 @@ function App() {
   else {
     return (
       <div className="App">
-        <h1> Work Style Survey </h1>
+        <h1 className="heading"> Work Style Survey </h1>
         <p> {mbti} </p>
-        <div>
-          {text}
-          <button onClick={begin} className="begin-btn">
-            Begin Quiz
-          </button>
-        </div>
+        <button onClick={begin}>
+          {text} Quiz
+        </button>
       </div>
     );
   }
