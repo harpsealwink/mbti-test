@@ -1,5 +1,21 @@
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
+import ENFJ from "./mbti_info/ENFJ";
+import ENFP from "./mbti_info/ENFP";
+import ENTJ from "./mbti_info/ENTJ";
+import ENTP from "./mbti_info/ENTP";
+import ESFJ from "./mbti_info/ESFJ";
+import ESFP from "./mbti_info/ESFP";
+import ESTJ from "./mbti_info/ESTJ";
+import ESTP from "./mbti_info/ESTP";
+import INFJ from "./mbti_info/INFJ";
+import INFP from "./mbti_info/INFP";
+import INTJ from "./mbti_info/INTJ";
+import INTP from "./mbti_info/INTP";
+import ISFJ from "./mbti_info/ISFJ";
+import ISFP from "./mbti_info/ISFP";
+import ISTJ from "./mbti_info/ISTJ";
+import ISTP from "./mbti_info/ISTP";
 
 import './App.css';
 
@@ -11,8 +27,7 @@ function App() {
   const [mbtiInfo, setMBTIInfo] = useState();
   const [sourceText, setSourceText] = useState();
   const [source, setSource] = useState();
-  const [blankText1, setBlankText1] = useState();
-  const [blankText2, setBlankText2] = useState();
+  const [blankText, setBlankText] = useState();
 
   const [q1, setQ1] = useState();
   const [q2, setQ2] = useState();
@@ -165,12 +180,41 @@ function App() {
     const scores = getScores();
     const mbti_ = getMBTI(scores);
     setMBTI("Your MBTI is: ".concat(mbti_));
-    fetch("./mbti_info/".concat(mbti_).concat(".txt"))
-      .then(response => response.text())
-      .then(text => setMBTIInfo(text));
 
-    setBlankText1(<div><br /><br /></div>);
-    setBlankText2(<div><br /><br /><br /></div>);
+    if (mbti_ == "ENFJ") {
+      setMBTIInfo(<ENFJ />);
+    } else if (mbti_ == "ENFP") {
+      setMBTIInfo(<ENFP />);
+    } else if (mbti_ == "ENTJ") {
+      setMBTIInfo(<ENTJ />);
+    } else if (mbti_ == "ENTP") {
+      setMBTIInfo(<ENTP />);
+    } else if (mbti_ == "ESFJ") {
+      setMBTIInfo(<ESFJ />);
+    } else if (mbti_ == "ESFP") {
+      setMBTIInfo(<ESFP />);
+    } else if (mbti_ == "ESTJ") {
+      setMBTIInfo(<ESTJ />);
+    } else if (mbti_ == "ESTP") {
+      setMBTIInfo(<ESTP />);
+    } else if (mbti_ == "INFJ") {
+      setMBTIInfo(<INFJ />);
+    } else if (mbti_ == "INFP") {
+      setMBTIInfo(<INFP />);
+    } else if (mbti_ == "INTJ") {
+      setMBTIInfo(<INTJ />);
+    } else if (mbti_ == "INTP") {
+      setMBTIInfo(<INTP />);
+    } else if (mbti_ == "ISFJ") {
+      setMBTIInfo(<ISFJ />);
+    } else if (mbti_ == "ISFP") {
+      setMBTIInfo(<ISFP />);
+    } else if (mbti_ == "ISTJ") {
+      setMBTIInfo(<ISTJ />);
+    } else if (mbti_ == "ISTP") {
+      setMBTIInfo(<ISTP />);
+    }
+    setBlankText(<div><br /><br /></div>);
     setSourceText("Source: ");
     setSource("16personalities.com/".concat(mbti_.toLowerCase()).concat("-personality"));
 
@@ -432,16 +476,16 @@ function App() {
       <div className="App">
         <h1 className="heading"> Work Style Survey </h1>
 
-        <div> <p>{mbti}</p> {blankText1}</div>
+        <h3>{mbti}</h3>
         <div>
-          {mbtiInfo} {blankText1}
+          {mbtiInfo} {blankText}
           <div className="source-text">
             {sourceText}
             <a className="source" href={"https://www.".concat(source)} target="_blank">
               {source}
             </a>
           </div>
-          {blankText2}
+          {blankText}
         </div>
 
         <button onClick={begin}>
