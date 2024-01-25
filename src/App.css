@@ -15,6 +15,10 @@ input[type='radio'] {
   accent-color: #4b63c4;
 }
 
+a:hover {
+  color: #4b63c4;
+}
+
 .heading {
   margin-bottom: 50px;
 }
@@ -25,6 +29,17 @@ input[type='radio'] {
   align-items: center;
   justify-content: space-between;
   color: #374fad;
-  font-weight: 500;
+  /* font-weight: 500; */
   margin-bottom: 40px;
+}
+
+.source-text {
+  color: gray;
+}
+
+.source {
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
+  color: gray;
 }

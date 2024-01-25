@@ -6,8 +6,13 @@ import './App.css';
 function App() {
   const [start, setStart] = useState(false);
   const [offset, setOffset] = useState(0);
-  const [text, setText] = useState("Begin");
+  const [btnMessage, setBtnMessage] = useState("Begin");
   const [mbti, setMBTI] = useState();
+  const [mbtiInfo, setMBTIInfo] = useState();
+  const [sourceText, setSourceText] = useState();
+  const [source, setSource] = useState();
+  const [blankText1, setBlankText1] = useState();
+  const [blankText2, setBlankText2] = useState();
 
   const [q1, setQ1] = useState();
   const [q2, setQ2] = useState();
@@ -159,12 +164,20 @@ function App() {
     // calculate MBTI
     const scores = getScores();
     const mbti_ = getMBTI(scores);
-    setMBTI(("Your MBTI is: ").concat(mbti_));
+    setMBTI("Your MBTI is: ".concat(mbti_));
+    fetch("./mbti_info/".concat(mbti_).concat(".txt"))
+      .then(response => response.text())
+      .then(text => setMBTIInfo(text));
 
-    setAnswers1([]);
-    setAnswers2([]);
-    setAnswers3([]);
-    setAnswers4([]);
+    setBlankText1(<div><br /><br /></div>);
+    setBlankText2(<div><br /><br /><br /></div>);
+    setSourceText("Source: ");
+    setSource("16personalities.com/".concat(mbti_.toLowerCase()).concat("-personality"));
+
+    setAnswers1([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    setAnswers2([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    setAnswers3([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+    setAnswers4([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   };
 
   const handleQ1 = function (val) {
@@ -300,7 +313,7 @@ function App() {
     // reached end of all questions
     setStart(false);
     setOffset(0);
-    setText("Retake")
+    setBtnMessage("Retake")
   }
 
   if (start) {
@@ -418,11 +431,23 @@ function App() {
     return (
       <div className="App">
         <h1 className="heading"> Work Style Survey </h1>
-        <p> {mbti} </p>
+
+        <div> <p>{mbti}</p> {blankText1}</div>
+        <div>
+          {mbtiInfo} {blankText1}
+          <div className="source-text">
+            {sourceText}
+            <a className="source" href={"https://www.".concat(source)} target="_blank">
+              {source}
+            </a>
+          </div>
+          {blankText2}
+        </div>
+
         <button onClick={begin}>
-          {text} Quiz
+          {btnMessage} Quiz
         </button>
-      </div>
+      </div >
     );
   }
 }
