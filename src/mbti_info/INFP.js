@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function INFP() {
 
@@ -18,7 +19,9 @@ function INFP() {
             <br /><br />
             <h3>Speaking Their Truth</h3>
             Few things make INFP personalities more uneasy than pretending to be someone they aren’t. With their sensitivity and their commitment to authenticity, people with this personality type tend to crave opportunities for creative self-expression. It comes as no surprise, then, that many famous INFPs are poets, writers, actors, and artists. They can’t help but muse about the meaning and purpose of life, dreaming up all sorts of stories, ideas, and possibilities along the way.
-            <h4>INFPs have a talent for self-expression. They may reveal their innermost thoughts and secrets through metaphors and fictional characters.</h4>
+            <br /><br />
+            <div className="blue-txt">INFPs have a talent for self-expression. They may reveal their innermost thoughts and secrets through metaphors and fictional characters.</div>
+            <br />
             Through these imaginative landscapes, these soulful personalities can explore their own inner nature as well as their place in the world. While this is a beautiful trait, INFPs sometimes show a tendency to daydream and fantasize rather than take action. At times, these personalities may intensely deliberate with themselves in their heads, wrestling with their options until the last possible moment. To avoid feeling frustrated, unfulfilled, or incapable, INFPs need to make sure that they take decisive steps to turn their dreams and ideas into reality.
             <br /><br />
             <h3>In Search of a Calling</h3>

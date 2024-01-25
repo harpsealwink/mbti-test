@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function ISFP() {
 
@@ -15,7 +16,9 @@ function ISFP() {
             These individuals embrace a flexible, adaptable approach to life. Some personalities thrive on strict schedules and routines – but not ISFPs. They prefer to take each day as it comes, doing what feels right to them in the moment. And they make sure to leave plenty of room in their lives for the unexpected – with the result that many of their most cherished memories are of spontaneous, spur-of-the-moment outings and adventures, whether by themselves or with their loved ones.
             <br /><br />
             This flexible mindset makes ISFP personalities remarkably tolerant and nonjudgmental. They genuinely appreciate the diverse nature of the world, embracing people who may hold different opinions or practice unique lifestyles. It’s no surprise, then, that they rarely try to convince people to change who they are or what they believe in.
-            <h4>ISFPs want to live in a world where they – and everyone else – have the freedom to live as they see fit, without judgment.</h4>
+            <br /><br />
+            <div className="blue-txt">ISFPs want to live in a world where they – and everyone else – have the freedom to live as they see fit, without judgment.</div>
+            <br />
             That said, their go-with-the-flow mentality can have its downsides. People with this personality type may struggle to set long-term plans – let alone stick with them. As a result, ISFPs sometimes have a pretty cloudy view of their ability to achieve their goals, and they often worry about letting other people down. They may find that adding a little structure to their lives goes a long way toward helping them feel more capable and organized – without quashing their independent spirits.
             <br /><br />
             <h3>Living in Harmony</h3>

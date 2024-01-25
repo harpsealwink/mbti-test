@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function INTP() {
 
@@ -11,7 +12,9 @@ function INTP() {
             <br /><br />
             <h3>The Life of the Mind</h3>
             INTP personalities often lose themselves in thought – which isn’t necessarily a bad thing. People with this personality type hardly ever stop thinking. From the moment they wake up, their mind buzzes with ideas, questions, and insights. At times, they may even find themselves conducting full-fledged debates in their own heads. And it’s not uncommon for them to drift off during conversations. Their mind simply executes a detour to uncharted territories of thought where new ideas are constantly being born.
-            <h4>Imaginative and curious, people with the INTP personality type can find endless fascination in the workings of their own mind.</h4>
+            <br /><br />
+            <div className="blue-txt">Imaginative and curious, people with the INTP personality type can find endless fascination in the workings of their own mind.</div>
+            <br />
             From the outside, INTPs may seem to live in a never-ending daydream. They have a reputation for being pensive, detached, and a bit reserved. That is, until they actively try to direct all of their mental energy on the moment or the person at hand. But regardless of which mode they’re in, INTPs are Introverts and tend to get tired out by extensive socializing. After a long day, they crave time alone to consult their own thoughts.
             <br /><br />
             INTPs cherish their independence and often find themselves most productive during the late evening hours when distractions are kept to a minimum. Even so, it would be a mistake to think that these personalities are unfriendly or uptight. When they connect with someone who can match their mental energy, INTPs absolutely light up, leaping from one thought to another. Few things energize them like the opportunity to swap ideas or enjoy a lively debate with another curious, inquiring soul.
@@ -20,7 +23,9 @@ function INTP() {
             People with the INTP personality type love to analyze patterns. Without necessarily knowing how they do it, they often have a Sherlock Holmes-like knack for spotting discrepancies and irregularities. In other words, it might be a bad idea to lie to someone with this type.
             <br /><br />
             Ironically, they shouldn’t always be held at their word. INTPs rarely mean to be dishonest, but with their active mind, they sometimes overflow with ideas and theories that they haven’t thought through all the way. These personalities may change their mind on anything from their weekend plans to a fundamental moral principle without ever realizing that they’d appeared to have made up their mind in the first place. In addition, they are often happy to play devil’s advocate in order to keep an interesting discussion humming along.
-            <h4>For people with the INTP personality type, the best conversations are like brainstorming sessions, with plenty of room for unconventional thoughts and off-the-wall what-ifs.</h4>
+            <br /><br />
+            <div className="blue-txt">For people with the INTP personality type, the best conversations are like brainstorming sessions, with plenty of room for unconventional thoughts and off-the-wall what-ifs.</div>
+            <br />
             INTPs could spend all day musing about ideas and possibilities – and they often do. That said, the practical, everyday work of turning those ideas into reality doesn’t always hold their interest. Fortunately, when it comes to dissecting a tricky, multilayered problem and coming up with a creative solution, few personality types can match INTPs’ creative genius and potential.
             <br /><br />
             <h3>Mysteries of the Universe</h3>

@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function ESTP() {
 
@@ -20,7 +21,9 @@ function ESTP() {
             <br /><br />
             <h3>The Path Less Traveled</h3>
             With perhaps the most perceptive, unfiltered view of any type, ESTPs have a unique skill in noticing small changes. Whether a shift in facial expression, a new clothing style, or a broken habit, people with this personality type pick up on hidden thoughts and motives where most types would be lucky to pick up anything specific at all. They use these observations immediately, calling out the change and asking questions even if it makes other people uncomfortable. ESTPs are as direct and straightforward as they come.
-            <h4>Sometimes ESTPs’ instantaneous observation and action is just what’s required, as in some corporate environments, and especially in emergencies.</h4>
+            <br /><br />
+            <div className="blue-txt">Sometimes ESTPs’ instantaneous observation and action is just what’s required, as in some corporate environments, and especially in emergencies.</div>
+            <br />
             People with the ESTP personality type are full of passion and energy, complemented by a rational, if sometimes distracted, mind. Inspiring, convincing, and colorful, they are natural group leaders, pulling everyone along the path less traveled, bringing life and excitement everywhere they go. Putting these qualities to a constructive and rewarding end is their true challenge.
         </div>
     );

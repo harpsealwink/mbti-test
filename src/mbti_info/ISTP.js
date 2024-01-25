@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function ISTP() {
 
@@ -15,7 +16,9 @@ function ISTP() {
             <br /><br />
             <h3>Direct & Decisive</h3>
             For all the mysteriousness heaped on them, with this type, what you see is what you get. Direct but reserved, calm but suddenly spontaneous, industrious but focused on their own priorities, people with the ISTP personality type can be a challenge to predict, even by their friends and loved ones. They can seem very steady for a while, but they tend to build up a store of impulsive energy that explodes without warning, taking their interests in bold new directions.
-            <h4>ISTPs act spontaneously on a new interest, exploring its viability after they’ve shifted gears.</h4>
+            <br /><br />
+            <div className="blue-txt">ISTPs act spontaneously on a new interest, exploring its viability after they’ve shifted gears.</div>
+            <br />
             Decisions made by ISTPs may largely stem from their rational nature and their sense of what feels practical for them at any given moment, but that doesn’t mean that they don’t get swept away by their passions from time to time. Once their flame is lit, they tend to commit their time and energy with an impressive intensity until another equally compelling, or perhaps more gratifying, opportunity arises. And when it does, people with this personality type have no qualms about walking away from projects or situations that seem unfruitful or drained of potential.
             <br /><br />
             One of the biggest issues that they are likely to face is that, because they often act out of haste, they might rub people the wrong way sometimes. ISTPs are not the type to sugarcoat their opinions or feelings. They tend to have a very straightforward communication style that is often misinterpreted as bluntness or a lack of sensitivity, but it is simply the way these genuine souls operate. ISTP personalities have no time for people-pleasing or unnecessary social niceties. With them, there is little need to question their motives.

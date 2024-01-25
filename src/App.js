@@ -181,37 +181,37 @@ function App() {
     const mbti_ = getMBTI(scores);
     setMBTI("Your MBTI is: ".concat(mbti_));
 
-    if (mbti_ == "ENFJ") {
+    if (mbti_ === "ENFJ") {
       setMBTIInfo(<ENFJ />);
-    } else if (mbti_ == "ENFP") {
+    } else if (mbti_ === "ENFP") {
       setMBTIInfo(<ENFP />);
-    } else if (mbti_ == "ENTJ") {
+    } else if (mbti_ === "ENTJ") {
       setMBTIInfo(<ENTJ />);
-    } else if (mbti_ == "ENTP") {
+    } else if (mbti_ === "ENTP") {
       setMBTIInfo(<ENTP />);
-    } else if (mbti_ == "ESFJ") {
+    } else if (mbti_ === "ESFJ") {
       setMBTIInfo(<ESFJ />);
-    } else if (mbti_ == "ESFP") {
+    } else if (mbti_ === "ESFP") {
       setMBTIInfo(<ESFP />);
-    } else if (mbti_ == "ESTJ") {
+    } else if (mbti_ === "ESTJ") {
       setMBTIInfo(<ESTJ />);
-    } else if (mbti_ == "ESTP") {
+    } else if (mbti_ === "ESTP") {
       setMBTIInfo(<ESTP />);
-    } else if (mbti_ == "INFJ") {
+    } else if (mbti_ === "INFJ") {
       setMBTIInfo(<INFJ />);
-    } else if (mbti_ == "INFP") {
+    } else if (mbti_ === "INFP") {
       setMBTIInfo(<INFP />);
-    } else if (mbti_ == "INTJ") {
+    } else if (mbti_ === "INTJ") {
       setMBTIInfo(<INTJ />);
-    } else if (mbti_ == "INTP") {
+    } else if (mbti_ === "INTP") {
       setMBTIInfo(<INTP />);
-    } else if (mbti_ == "ISFJ") {
+    } else if (mbti_ === "ISFJ") {
       setMBTIInfo(<ISFJ />);
-    } else if (mbti_ == "ISFP") {
+    } else if (mbti_ === "ISFP") {
       setMBTIInfo(<ISFP />);
-    } else if (mbti_ == "ISTJ") {
+    } else if (mbti_ === "ISTJ") {
       setMBTIInfo(<ISTJ />);
-    } else if (mbti_ == "ISTP") {
+    } else if (mbti_ === "ISTP") {
       setMBTIInfo(<ISTP />);
     }
     setBlankText(<div><br /><br /></div>);

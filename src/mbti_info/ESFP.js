@@ -1,4 +1,5 @@
 import React from "react";
+import './Mbti.css';
 
 function ESFP() {
 
@@ -22,7 +23,9 @@ function ESFP() {
             The biggest challenge they face is that they are often so focused on immediate pleasures that they neglect the duties and responsibilities that make those luxuries possible. Complex analyses, repetitive tasks, and matching statistics to real consequences are not easy activities for people with the ESFP personality type. They’d rather rely on spontaneous opportunities or simply ask for help from their extensive circle of friends. It is important for ESFPs to challenge themselves to keep track of long-term things like their retirement plans or sugar intake – there won’t always be someone else around who can help to keep an eye on these things.
             <br /><br />
             ESFPs recognize value and quality, which on its own is a fine trait. In combination with their tendency to be poor planners, though, this can cause them to live beyond their means, and credit cards are especially dangerous. More focused on leaping at opportunities than in planning out long-term goals, they may find that their inattentiveness has made some activities unaffordable.
-            <h4>There’s nothing that makes ESFPs feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends.</h4>
+            <br /><br />
+            <div className="blue-txt">There’s nothing that makes ESFPs feel quite as unhappy as realizing that they are boxed in by circumstance, unable to join their friends.</div>
+            <br />
             ESFPs are welcome wherever there’s a need for laughter, playfulness, and a volunteer to try something new and fun – and there’s no greater joy for these personalities than to bring everyone else along for the ride. They can chat for hours, sometimes about anything but the topic they meant to talk about, and they share their loved ones’ emotions through good times and bad. If they can just remember to keep their ducks in a row, they’ll always be ready to dive into all the new and exciting things that the world has to offer, friends in tow.
         </div>
     );
