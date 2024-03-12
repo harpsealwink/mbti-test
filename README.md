@@ -1,5 +1,5 @@
 # MBTI Survey
 
-Website based on the Python script a friend made for their study abroad project to teach students their work styles. (very similar to the test on 16personalities.com)
+Website made to help a friend with her study abroad project to teach students their work styles. Based on the Python script the friend wrote. (very similar to the test on 16personalities.com)
 
 https://mbti-survey.vercel.app/
